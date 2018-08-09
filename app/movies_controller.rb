@@ -66,7 +66,7 @@ def can_find_using_where_clause_and_be_sorted
   # release date descending
   movie = Movie.where("release_date > 2002").order(release_date: :desc)
   # Client.where("orders_count = ?", params[:orders])
-  # Client.order(created_at: :desc)
+  # Client.order(created_at: :desc) || Client.order("created_at DESC")
 end
 
 def can_be_found_updated_and_saved
